@@ -20,6 +20,54 @@ img {
 }
 
 /* Tu código va aquí */
+
 body {
   font-size: 1.6rem;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 400;
+  margin: 0
+}
+/* barra navegacion */
+.navbar {
+  background-color: #ffffff;          /* Fondo blanco */
+  height: 5.2rem;                     
+  border-bottom: 0.1rem solid #e0ddd5;
+  padding: 0 3.2rem;                  
+  display: flex;                      
+  align-items: center;                
+  justify-content: space-between;     /* Logo izquierda, links centro, botón derecha */
+}
+
+.titulo{
+  color: #1a1a1a;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+}
+
+/* Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Links li */
+.nav-links a {
+  text-decoration: none;
+  color: #555555;
+  font-size: 1.2rem;
+  margin-right: 2.8rem;
+  
+  
+}
+
+/* Botón reservar */
+.btn-reservar {
+  background-color: #c0392b ;
+  color: #fff;
+  padding: 0.6rem 1.6rem;
+  border-radius: 0.6rem;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
