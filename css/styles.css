@@ -25,7 +25,9 @@ body {
   font-size: 1.6rem;
   font-family: 'Noto Serif JP', serif;
   font-weight: 400;
-  margin: 0
+  margin: 0 auto;
+  width: 140rem;
+  background-color: #fff9f6;
 }
 
 /*  1.1  Navbar  */
@@ -177,9 +179,8 @@ body {
 }
 
 .menu-pill {
-  display: block;
   color: #c0392b; 
-  font-size: 1.2rem; 
+  font-size: 1rem; 
   margin-bottom: 0.6rem; 
 }
 
@@ -195,7 +196,6 @@ body {
   font-size: 1.2rem;
   text-decoration: none;
   border-bottom: 0.1rem solid #e0ddd5;
-  padding-bottom: 0.2rem;
   transition: color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -285,7 +285,7 @@ body {
 }
 
 
-/* Los mas pedidos  */
+/* 3.Los mas pedidos  */
 
 /* Contenedor de la seccion */
 .los-mas-pedidos {
@@ -315,14 +315,13 @@ body {
 .los-mas-pedidos-h2 {
   font-size: 2rem;
   font-weight: 500;
-  margin: 0 0 1rem 0; 
+  margin-bottom: 1rem;
 }
 
 .los-mas-pedidos-desc {
   font-size: 1.2rem;
   color: #555555;
   line-height: 1.7;
-  margin: 0;
 }
 
 /* Lista de productos (derecha) */
@@ -394,3 +393,309 @@ body {
 
 
 
+/* 4.Sobre nosotros */
+
+/* Contenedor de la seccion */
+.sobre-nosotros {
+  background-color: #ffffff;
+  padding: 4.8rem 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Columna de texto (izquierda) */
+.sobre-texto {
+  flex-basis: 45%;
+}
+
+.sobre-pill {
+  color: #c0392b;
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.sobre-h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1.6rem; /* Resetea el margin por defecto y aplica el bottom */
+}
+
+.sobre-p {
+  font-size: 1.3rem;
+  color: #555555;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+
+/* Panel de estadísticas (derecha) */
+.sobre-stadisticas {
+  flex-basis: 45%;
+  border: 0.1rem solid #e0ddd5;
+  border-radius: 1rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  overflow: hidden; /* Recomendacion para el borde */
+}
+
+/* Cada estadistica (item) */
+.stat-item {
+  flex-basis: 33.33%;
+  background-color: #ffffff;
+  padding: 2rem 1.6rem;
+  text-align: center;
+  border-right: 0.1rem solid #e0ddd5;
+  display: flex;
+  flex-direction: column; /* Para colocar el numero arriba y la etiqueta abajo */
+}
+
+/* Quita el borde derecho al último item */
+.stat-item:last-child {
+  border-right: none;
+}
+
+.stat-num {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  color: #555555;
+  margin-top: 0.4rem;
+}
+
+
+/* 5. Contacto */
+
+/* Contenedor de la seccion */
+.contacto-seccion {
+  background-color: #f2f0eb;
+  padding: 4.8rem 3.2rem;
+  border-top: 0.1rem solid #e0ddd5;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* Columna de informacion (izquierda) */
+.contacto-info {
+  flex-basis: 40%;
+}
+
+.contacto-pill {
+  display: block;
+  color: #c0392b;
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.contacto-h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 0 0 1.6rem 0;
+}
+
+.contacto-desc {
+  font-size: 1.3rem;
+  color: #555555;
+  line-height: 1.8;
+  margin: 0 0 2.4rem 0;
+}
+
+/* Lista de datos */
+.contacto-list {
+  list-style: none; /* Quita viñetas */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto-list li {
+  font-size: 1.2rem;
+  color: #555555;
+  margin-bottom: 1rem; /* Margen entre items */
+}
+
+/* El ultimo li no necesita margen extra */
+.contacto-list li:last-child {
+  margin-bottom: 0;
+}
+
+.contacto-link {
+  color: #c0392b;
+  text-decoration: none;
+}
+
+.contacto-link:hover {
+  text-decoration: underline;
+}
+
+/* Tarjeta del formulario (derecha) */
+.contacto-targeta {
+  flex-basis: 50%;
+  background-color: #ffffff;
+  border: 0.1rem solid #e0ddd5;
+  border-radius: 1rem;
+  padding: 2.4rem;
+}
+
+/* Formulario */
+.contacto-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contenedor de cada campo */
+.formulario {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column; /* Para poner el label arriba del input */
+}
+
+/* Labels */
+.contacto-form label {
+  font-size: 1.1rem;
+  color: #555555;
+  margin-bottom: 0.4rem;
+}
+
+/* Inputs y Textarea */
+.contacto-form input,
+.contacto-form textarea {
+  background-color: #f9f8f5;
+  border: 0.1rem solid #e0ddd5;
+  border-radius: 0.6rem;
+  padding: 0.9rem 1.2rem;
+  font-size: 1.2rem;
+  width: 100%;
+  font-family: inherit; /* Para mantener la tipografia */
+}
+
+
+/* Boton de envio */
+.btn-submit {
+  background-color: #c0392b;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.6rem;
+  width: 100%;
+  margin-top: 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #a93226; /* Reutilizamos el hover oscuro del boton primario */
+}
+
+
+/* 6. Footer */
+
+/* Contenedor footer */
+.footer-seccion {
+  background-color: #111111;
+  padding: 3.6rem 3.2rem 2rem;
+}
+
+/* Fila de columnas */
+.footer-columnas {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 2.8rem;
+}
+
+/* Columna de marca (primera, más ancha) */
+.footer-marca {
+  flex-basis: 35%;
+}
+
+.footer-h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+
+.footer-p {
+  color: #666666;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  margin: 0;
+}
+
+/* Columnas de navegacion */
+.footer-nav {
+  flex-basis: -18%;
+}
+
+.footer-h4 {
+  color: #999999;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+/* Listas del footer */
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  font-size: 1.1rem;
+  color: #666666;
+  line-height: 1.9;
+}
+
+.footer-list a {
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+/* Barra inferior */
+.footer-inferior {
+  border-top: 0.1rem solid #222222;
+  padding-top: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-derechos {
+  font-size: 1rem;
+  color: #444444;
+  margin: 0;
+}
+
+/* Lista de redes */
+.footer-redes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.footer-redes li {
+  margin-right: 1.6rem; /* Margen entre redes */
+}
+
+.footer-redes li:last-child {
+  margin-right: 0; /* Quita el margen al ultimo para que quede alineado perfecto a la derecha */
+}
+
+.footer-redes a {
+  font-size: 1rem;
+  color: #444444;
+  text-decoration: none;
+}
