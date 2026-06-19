@@ -27,6 +27,9 @@ body {
   font-weight: 400;
   margin: 0
 }
+
+/*  1.1  Navbar  */
+
 /* barra navegacion */
 .navbar {
   background-color: #ffffff;          /* Fondo blanco */
@@ -71,3 +74,323 @@ body {
   font-size: 1.1rem;
   font-weight: bold;
 }
+
+
+/*  1.2 Header info (hero)  */
+
+/* Contenedor principal del hero */
+.hero {
+  background-color: #000000;
+  padding: 6.4rem 3.2rem;
+  display: flex;
+  align-items: center;
+}
+/* Contenedor de texto alineado a la izquierda */
+.hero-content {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Etiqueta superior (pill) */
+.hero-pill {
+  color: #c0392b;
+  border: 0.1rem solid rgba(192, 57, 43, 0.5);
+  font-size: 1rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Titulo h1  */
+.hero-titulo {
+  color: #ffffff;
+  font-size: 3.6rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1.4rem;
+  margin-top: 0;
+}
+.hero-titulo span {
+  color: #c0392b;
+}
+/* Parrafo descriptivo */
+.hero-desc {
+  color: #888888;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  max-width: 34rem;
+  margin-bottom: 2.8rem;
+  margin-top: 0;
+}
+
+/* Contenedor de botones */
+.hero-btns {
+  display: flex;
+  align-items: center;
+}
+/* Boton ver menu */
+.btn-ver-menu {
+  background-color: #c0392b;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem 2.2rem;
+  border-radius: 0.6rem;
+  text-decoration: none; 
+  margin-right: 1rem; /* Margen entre botones en el primer boton */
+  transition: background-color 0.3s ease;
+}
+
+.btn-ver-menu:hover {
+  background-color: #a93226;
+}
+
+/* Boton reservar mesa */
+.btn-reservar-mesa {
+  background-color: transparent;
+  border: 0.1rem solid rgba(255, 255, 255, 0.2);
+  color: #cccccc;
+  font-size: 1.2rem;
+  padding: 1rem 1.8rem;
+  border-radius: 0.6rem;
+  text-decoration: none;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+
+/*  2.Nuestro Menu */
+
+/* Contenedor de la seccion */
+.menu-seccion {
+  background-color: #ffffff;
+  padding: 4.8rem 3.2rem;
+}
+
+/* Encabezado de la seccion */
+.menu-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2.8rem;
+}
+
+.menu-pill {
+  display: block;
+  color: #c0392b; 
+  font-size: 1.2rem; 
+  margin-bottom: 0.6rem; 
+}
+
+.menu-h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 0; 
+}
+
+/* Enlace (Ver todos) */
+.menu-link {
+  color: #555555;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-bottom: 0.1rem solid #e0ddd5;
+  padding-bottom: 0.2rem;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.menu-link:hover {
+  color: #c0392b; 
+  border-color: #c0392b;
+}
+
+/* Fila de tarjetas */
+.menu-fila {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+/* Tarjeta de producto */
+.prod-card {
+  flex-basis: 25%;
+  background-color: #ffffff;
+  border: 0.1rem solid #e0ddd5;
+  border-radius: 1rem;
+  overflow: hidden; /* Las imágenes no sobresalen */
+  margin-right: 2rem; 
+}
+/* Eliminar margen derecho en la última tarjeta */
+.prod-card:last-child {
+  margin-right: 0;
+}
+
+/* Imagen de la tarjeta */
+.card-img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  display: block;
+}
+
+/* Padding del contenido */
+.card-info {
+  padding: 1.2rem;
+}
+
+.card-titulo {
+  font-size: 1.2rem; 
+  font-weight: bold; 
+  margin: 0 0 0.4rem 0; /* margin-bottom-h3 */
+}
+
+.card-desc {
+  font-size: 1.1rem; 
+  color: #555555; 
+  line-height: 1.5; 
+  margin: 0 0 1rem 0; /* margin-bottom */
+}
+
+/* Pie de tarjeta */
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-precio {
+  color: #c0392b; 
+  font-size: 1.3rem; 
+  font-weight: bold; 
+}
+
+/* Boton (+) */
+.btn-add {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 0; 
+}
+
+.btn-add:hover { /* para cambia el color de fondo al pasar el mouse por encima */
+  background-color: #c0392b; 
+}
+
+
+/* Los mas pedidos  */
+
+/* Contenedor de la seccion */
+.los-mas-pedidos {
+  background-color: #f2f0eb;
+  padding: 4.8rem 3.2rem;
+  border-top: 0.1rem solid #e0ddd5;
+  border-bottom: 0.1rem solid #e0ddd5;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Columna de introduccion (izquierda) */
+.los-mas-pedidos-header {
+  flex-basis: 28rem;
+  flex-shrink: 0;
+  margin-right: 4.8rem;
+}
+
+.los-mas-pedidos-pill {
+  display: block;
+  color: #c0392b;
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.los-mas-pedidos-h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 0 1rem 0; 
+}
+
+.los-mas-pedidos-desc {
+  font-size: 1.2rem;
+  color: #555555;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Lista de productos (derecha) */
+.los-mas-pedidos-lista {
+  flex: 1; /* Ocupa el espacio restante */
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+
+/* Ítem de la lista */
+.los-mas-pedidos-item {
+  display: flex;
+  align-items: center;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 0.1rem solid #e0ddd5;
+}
+
+.los-mas-pedidos-item:last-child {
+  border-bottom: none; /* Quita el borde inferior al ultimo elemento */
+}
+
+/* Imagen en miniatura */
+.los-mas-pedidos-img {
+  width: 5.2rem;
+  height: 5.2rem;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  margin-right: 1.4rem;
+}
+
+/* Contenedor de nombre y descripcion */
+.los-mas-pedidos-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.los-mas-pedidos-nombre {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.los-mas-pedidos-detalles {
+  font-size: 1.1rem;
+  color: #555555;
+}
+
+/* Bloque valores (precio + conteo) */
+.los-mas-pedidos-valores {
+  margin-left: auto; /* Empuja el bloque a la derecha */
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.los-mas-pedidos-precio {
+  color: #c0392b;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.los-mas-pedidos-contador {
+  font-size: 1rem;
+  color: #555555;
+}
+
+
+
